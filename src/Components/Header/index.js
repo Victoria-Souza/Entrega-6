@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsLayoutTextSidebarReverse,BsFillStarFill,BsFillBasketFill } from "react-icons/bs";
-import { Button, Head, HeaderMenu, HeaderName, MenuItem } from './styles';
+import { Button, Head, HeaderMenu, HeaderName, MenuItem} from './styles';
 
 export default function Header() {
     const itensMenu = [
@@ -17,7 +17,9 @@ export default function Header() {
   return(
     <Head>
         <HeaderName>GELÉIAS</HeaderName>
-        <HeaderMenu>{renderList}</HeaderMenu>
+        <HeaderMenu>
+                {renderList}
+        </HeaderMenu>
         <Button>Entrar</Button>
     </Head>
   )

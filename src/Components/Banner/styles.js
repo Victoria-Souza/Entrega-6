@@ -15,6 +15,7 @@ export const Conteudo = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: #fff;
     word-spacing: 5px;
 `;
