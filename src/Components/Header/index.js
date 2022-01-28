@@ -1,17 +1,21 @@
 import React from 'react';
-import { BsLayoutTextSidebarReverse,BsFillStarFill,BsFillBasketFill } from "react-icons/bs";
-import { Button, Head, HeaderMenu, HeaderName, MenuItem} from './styles';
+import { BsLayoutTextSidebarReverse,BsFillStarFill, BsFillHouseFill } from "react-icons/bs";
+import {Button, Head, HeaderMenu, HeaderName, MenuItem} from './styles';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     const itensMenu = [
-        {nome: "Produtos", icone: <BsLayoutTextSidebarReverse /> },
-        {nome: "Novidades", icone: <BsFillStarFill />},
-        {nome: "Carrinho de Compras", icone: <BsFillBasketFill />}
+        {nome: "Início", icone: <BsFillHouseFill />, path:"/" },
+        {nome: "Produtos", icone: <BsLayoutTextSidebarReverse />, path:"/Produtos" },
+        {nome: "Novidades", icone: <BsFillStarFill />, path:"/Novidades"},
+        
     ]
     const renderList = itensMenu.map((item,index)=>(
         <MenuItem key = {index}>
             {item.icone}
-            {item.nome}
+            <Link to = {item.path}>
+                {item.nome}
+            </Link>
         </MenuItem>
     ))
   return(

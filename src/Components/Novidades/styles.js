@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import img from "../../Assets/produto_img.jpg"
+import img from "../../Assets/produto_img2.jpg"
 
 export const ListaProdutos = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 32vh;
+    height: 38vh;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 3vh;
@@ -20,6 +20,7 @@ export const Wrapper = styled.div`
     flex-direction:column;
     justify-content:center;
     background-color: antiquewhite;
+    padding: 0 3vw;
 `; 
 
 export const DivProdutos = styled.div`
@@ -60,4 +61,8 @@ export const Titulo = styled.div`
     border-bottom: 2px solid black;
 }
 
+`;
+export const Nov = styled.div`
+    color: red;
+    padding: 1vh 0;
 `;

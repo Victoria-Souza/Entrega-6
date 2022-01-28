@@ -9,6 +9,7 @@ export const Redes = styled.h4 `
 `;
 
 export const Foot = styled.div `
+    width: 100%;
     display: flex;
     justify-content:space-around;
     padding: 2vh ;
